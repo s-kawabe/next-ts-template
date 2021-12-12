@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "lint:eslint": "eslint --cache .",
-    "lint:prettier": "prettier --check ."
+    "lint:prettier": "prettier --check .",
+    "test": "jest",
+    "component": "scaffdog generate component"
   },
   "prettier": {
     "trailingComma": "es5",
@@ -17,9 +19,15 @@
     "printWidth": 120
   },
   "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-error-boundary": "^3.1.4",
+    "ts-jest": "^27.1.1"
   },
   "devDependencies": {
     "@types/node": "16.11.12",
@@ -34,6 +42,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
+    "scaffdog": "^1.0.1",
     "typescript": "4.5.3"
   },
   "lint-staged": {
