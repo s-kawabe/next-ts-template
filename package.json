@@ -9,6 +9,12 @@
     "lint:eslint": "eslint --cache .",
     "lint:prettier": "prettier --check ."
   },
+  "prettier": {
+    "trailingComma": "es5",
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
+  },
   "dependencies": {
     "next": "12.0.7",
     "react": "17.0.2",
