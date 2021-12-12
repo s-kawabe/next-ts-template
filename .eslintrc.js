@@ -13,12 +13,10 @@ module.exports = {
     },
     sourceType: 'module',
   },
-  settings: { tailwindcss: { groupByResponsive: true } }, // tailwindcss moduleに対して実行されるすべてのルールに適用
-  plugins: ['react-hooks', 'react', '@typescript-eslint', 'import', "simple-import-sort", "tailwindcss"],
+  plugins: ['react-hooks', 'react', '@typescript-eslint', 'import', "simple-import-sort"],
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:tailwindcss/recommended",
     "next",
     "next/core-web-vitals",
     "prettier",
@@ -59,7 +57,6 @@ module.exports = {
     "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/consistent-type-imports": ["warn", { prefer: "type-imports" }],
     "@typescript-eslint/no-unused-vars": ["error", { varsIgnorePattern: "^_", argsIgnorePattern: "^_", }], // 未使用変数はエラー
-    "tailwindcss/no-custom-classname": "off" // daisy使うとエラー出るのでオフ
   },
   overrides: [　// 一部ルールを除外する
     {
