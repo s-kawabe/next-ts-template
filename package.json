@@ -19,7 +19,7 @@
     "printWidth": 120
   },
   "dependencies": {
-    "next": "12.0.7",
+    "next": "12.1.1",
     "nprogress": "0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -38,7 +38,7 @@
     "@typescript-eslint/eslint-plugin": "5.8.1",
     "@typescript-eslint/parser": "5.8.1",
     "eslint": "8.9.0",
-    "eslint-config-next": "12.0.7",
+    "eslint-config-next": "12.1.1",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-simple-import-sort": "7.0.0",
