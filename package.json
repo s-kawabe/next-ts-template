@@ -31,7 +31,7 @@
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "12.1.5",
     "@testing-library/user-event": "13.5.0",
-    "@types/jest": "27.0.3",
+    "@types/jest": "27.4.1",
     "@types/node": "16.11.27",
     "@types/nprogress": "0.2.0",
     "@types/react": "17.0.44",
