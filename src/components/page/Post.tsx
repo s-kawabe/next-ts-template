@@ -1,8 +1,7 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 
-const PostPage: NextPage = () => {
+export const Post = () => {
   return (
     <div>
       <Head>
@@ -17,5 +16,3 @@ const PostPage: NextPage = () => {
     </div>
   )
 }
-
-export default PostPage

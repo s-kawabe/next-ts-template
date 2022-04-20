@@ -7,3 +7,17 @@
 - react-testing-library
 - scaffdog
 - renovate bot
+
+# directory rule
+**src/pages**
+- componentsのpage内コンポーネントをimportするだけに留め、この中でJSXを書くことは極力なくす
+
+**src/components**
+┝ layout (レイアウトに関する抱擁コンポーネント)
+┝ model (何らかのモデル概念に依存したコンポーネント)
+┝ page (ページコンポーネント)
+┝ ui (汎用的なコンポーネント)
+
+- コンポーネントはcontainer, presenterパターンを意識する
+- pages内はpage extensionの記法でロジックとページごとにファイルを分ける
+- testファイルとstoriesファイルは各コンポーネントと同じディレクトリに配置
