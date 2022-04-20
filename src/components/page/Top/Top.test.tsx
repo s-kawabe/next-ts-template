@@ -6,7 +6,6 @@ import { Top } from './Top'
 describe('Top page test', () => {
   test('rendering test', () => {
     render(<Top />)
-
-    expect(screen.getByRole('link', { name: 'Next.js' })).toBeTruthy()
+    expect(screen.getByText('test text')).toBeTruthy()
   })
 })
