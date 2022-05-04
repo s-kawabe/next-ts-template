@@ -7,6 +7,7 @@
 - react-testing-library
 - scaffdog
 - renovate bot
+- pathpida
 
 # directory rule
 **src/pages**
@@ -22,4 +23,4 @@
 - コンポーネントはcontainer, presenterパターンを意識する
 - pages内はpage extensionの記法でロジックとページごとにファイルを分ける
 - testファイルとstoriesファイルは各コンポーネントと同じディレクトリに配置
-- VFCは使わない
+- FC/VFCは使わない

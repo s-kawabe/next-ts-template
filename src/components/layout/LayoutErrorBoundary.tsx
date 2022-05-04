@@ -1,4 +1,4 @@
-import type { FC, ReactNode, VFC } from 'react'
+import type { ReactNode } from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
 
 type ErrorFallbackProps = {
@@ -6,7 +6,7 @@ type ErrorFallbackProps = {
   resetErrorBoundary: () => void
 }
 
-const ErrorFallback: VFC<ErrorFallbackProps> = (props) => {
+const ErrorFallback = (props: ErrorFallbackProps) => {
   return (
     <div role="alert">
       <p>Something went wrong:</p>
@@ -20,7 +20,7 @@ type LayoutErrorBoundaryProps = {
   children: ReactNode
 }
 
-export const LayoutErrorBoundary: FC<LayoutErrorBoundaryProps> = (props) => {
+export const LayoutErrorBoundary = (props: LayoutErrorBoundaryProps) => {
   return (
     <ErrorBoundary
       FallbackComponent={ErrorFallback}

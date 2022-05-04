@@ -10,19 +10,17 @@ questions:
 # `{{ inputs.name | pascal }}.tsx`
 
 ```typescript
-import type { FC } from 'react'
-
 type {{ inputs.name | pascal -}}ViewProps = {
 } & {{ inputs.name | pascal -}}Props
 
-const {{ inputs.name | pascal -}}View: FC<{{ inputs.name | pascal -}}ViewProps> = (props) => {
+const {{ inputs.name | pascal -}}View = (props: {{ inputs.name | pascal -}}ViewProps) => {
   return null
 }
 
 type {{ inputs.name | pascal -}}Props = {
 }
 
-export const {{ inputs.name | pascal }}: FC<{{ inputs.name | pascal -}}Props> = (props) => {
+export const {{ inputs.name | pascal }} = (props: {{ inputs.name | pascal -}}Props) => {
   return <{{ inputs.name | pascal -}}View {...props} />
 }
 ```
