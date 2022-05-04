@@ -5,6 +5,8 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "noUncheckedIndexedAccess": true, // restrict index signature
+    "exactOptionalPropertyTypes": true, // restrict optional property
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
