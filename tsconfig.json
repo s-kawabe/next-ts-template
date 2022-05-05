@@ -9,7 +9,7 @@
     "exactOptionalPropertyTypes": true, // restrict optional property
     "noImplicitReturns": true, // requires a write of all return values in the function
     "noFallthroughCasesInSwitch": true, // must write 'break' for fallthrough in switch
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true, // judge case Upper and Lower
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
