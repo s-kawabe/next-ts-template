@@ -3,6 +3,8 @@ import Link from 'next/link'
 import type { ChangeEvent } from 'react'
 import { useEffect, useState } from 'react'
 
+import { pagesPath } from '@/utils/$path'
+
 export const Post = () => {
   const [text, setText] = useState('')
 
@@ -28,7 +30,7 @@ export const Post = () => {
         <input type="text" onChange={handleChange} />
         <p>{text}</p>
       </main>
-      <Link href="/">back to top</Link>
+      <Link href={pagesPath.$url()}>back to top</Link>
     </div>
   )
 }

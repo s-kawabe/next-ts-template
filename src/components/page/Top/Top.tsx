@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { pagesPath } from '@/utils/$path'
+
 export const Top = () => {
   return (
     <div>
@@ -21,7 +23,7 @@ export const Top = () => {
           <p>
             Get started by editing <code>pages/index.tsx</code>
           </p>
-          <Link href={'/post'}>to post</Link>
+          <Link href={pagesPath.post.$url()}>to post</Link>
         </div>
         <div>
           <a href="https://nextjs.org/docs">
