@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 nprogress.configure({ showSpinner: false, speed: 400, minimum: 0.25 })
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  if (process.browser) {
+  if (typeof window !== undefined) {
     nprogress.start()
   }
 
