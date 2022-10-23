@@ -47,22 +47,22 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error', // hooksの基本的なlinter
     'react-hooks/exhaustive-deps': 'warn', // effectやcallbackのdeps linter
     'import/newline-after-import': 'error',
-    'import/no-default-export': 'error',
+    'import/no-default-export': 'error', // default exportは禁止
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
-    '@typescript-eslint/no-explicit-any': 'error',
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
-    '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }],
+    '@typescript-eslint/no-explicit-any': 'error', // any禁止
+    '@typescript-eslint/explicit-module-boundary-types': 'error', // 関数の戻り値の型を明示的に書く
+    '@typescript-eslint/consistent-type-imports': ['warn', { prefer: 'type-imports' }], // import文において型と値を分ける
     '@typescript-eslint/no-unused-vars': ['error', { varsIgnorePattern: '^_', argsIgnorePattern: '^_' }], // 未使用変数はエラー
   },
   overrides: [
-    // 一部ルールを除外する
+    // 特定のパターンだけ一部ルールを除外する
     {
       files: ['src/pages/**/*.tsx'], // pagesのdefault exportは仕方ないので除外
       rules: { 'import/no-default-export': 'off' },
     },
     {
-      files: ['**/*.tsx'],
+      files: ['**/*.tsx'], // tsxはFCなどがあるため不要
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 'off',
       },
