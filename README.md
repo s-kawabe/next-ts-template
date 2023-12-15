@@ -1,5 +1,6 @@
-> [!WARNING]  
-> Sorry, this repository does not support Next.js v13 or later ...
+> [!WARNING]
+> This template is not maintained.
+> And does not support Next.js v13 or later ...
 
 # Next.js Template Repository
 - Next.js
