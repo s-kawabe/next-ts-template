@@ -1,12 +1,18 @@
 {
+  // monorepo系などで、複数のpackage.jsonがある場合に、それぞれのpackage.jsonに対してESLintを実行する
   "eslint.workingDirectories": [{ "mode": "auto" }],
+  // formatOnSaveを全体でoffにする
   "editor.formatOnSave": false,
-  "typescript.referencesCodeLens.enabled": true,
+  // 必要なものだけformatOnSaveを有効にする
   "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.formatOnSave": true },
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode", "editor.formatOnSave": true },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit" // 保存された時にアクションを実行
   },
-  "eslint.validate": ["json", "javascript", "javascriptreact", "typescript", "typescriptreact"],
+  // 各export文がどこから参照されているかを上に表示する
+  "typescript.referencesCodeLens.enabled": true,
+  // vscodeが扱うTypeScriptバージョンはそのプロジェクトの依存に従うようにする
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // スペルチェッカー拡張機能に、スペルミスと誤判定されないための設定
   "cSpell.words": ["cypress", "eslint", "eslintignore", "eslintcache", "prettier", "prettierrc"]
 }
